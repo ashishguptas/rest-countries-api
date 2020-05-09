@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body class="">
+    <header>
+        <div class="container">
+            <h1>Where in the world</h1>
+            <button class="btn btn-toggle" id="togglebtn">
+                <i class="far fa-moon"></i>
+                <i class="fas fa-moon"></i>
+                Dark Mode
+            </button>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <input type="text" placeholder="Search for a country" class="search" id="search">
+            <div class="dropdown" id="fillter">
+                Fillter by Region
+                <i class="fa fa-chevron-down"></i>
+                <ul>
+                    <li>All</li>
+                    <li>Africa</li>
+                    <li>America</li>
+                    <li>Asia</li>
+                    <li>Europe</li>
+                    <li>Oceania</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="modal" id="modal">
+        <div class="container">
+            <button class="btn-close" id="btn-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" />
+            <div class="modal-body"></div>
+        </div>
+    </div>
+    <section>
+        <div class="container countries" id="countries">
+            <h2>Countries Loading...</h2>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.google.com/specimen/Nunito+Sans');
+
+:root{
+    --background-el : hsl(0, 0%, 100%);;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+    margin: 0px;
+}
+body.dark{
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+    --background-el:hsl(209, 23%, 22%)
+}
+header{
+    background-color: var(--background-el)
+}
+img{
+    max-width: 100%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
+}
+.countries{
+    justify-content: center;
+}
+h1{
+    margin: 0px;
+}
+.btn-toggle{
+    border: none;
+    font-size: 16px;
+    color: inherit;
+    background-color: var(--background-el);
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+.btn-toggle .fas{
+    display: none;
+}
+body.dark .btn-toggle .fas{
+    display: inline-block;
+}
+body.dark .btn-toggle .far{
+    display: none;
+}
+.search{
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    padding: 20px;
+    min-width: 300px;
+    outline: none;
+    color: inherit;
+    box-shadow: aqua;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--background-el);
+}
+.search::placeholder{
+    color: inherit;
+}
+.dropdown{
+    background-color: var(--background-el);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 20px;
+    position: relative;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown .fa-chevron-down{
+    margin-left: 10px;
+}
+.dropdown ul{
+    background-color: var(--background-el);
+    position: absolute;
+    width: 75%;
+    left: 0px;
+    z-index: 999;
+    top: 100%;
+    list-style-type: none;
+    padding: 20px;
+    border-radius: 4px;
+    display: none;
+}
+.dropdown.open ul{
+    display: block;
+}
+.dropdown ul li{
+    margin: 10px 0px;
+}
+
+.card{
+    background-color: var(--background-el);
+    border-radius: 4px;
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 40px;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-body{
+    padding: 30px;
+}
+.card-body h2{
+    margin: 0px;
+}
+
+.modal{
+    background-color: var(--background-el);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.modal img{
+    max-width: 300px;
+}
+.modal-body{
+    padding: 30px;
+}
+.btn-close{
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
